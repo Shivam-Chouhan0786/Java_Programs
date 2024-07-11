@@ -49,9 +49,9 @@
 // }
 
 import java.io.BufferedReader;
+import java.util.StringTokenizer;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 /**
  * javaPrac4
@@ -62,7 +62,7 @@ public class javaPrac4 {
         InputStreamReader i=new InputStreamReader(System.in);
         BufferedReader br =new BufferedReader(i);
         String s1=br.readLine();
-        StringTokenizer st=new StringTokenizer(s1,",");
+        StringTokenizer st=new StringTokenizer(s1,", ");
         System.out.println(st.nextToken());
         System.out.println(st.nextToken());
         System.out.println(st.nextToken());
