@@ -1,0 +1,35 @@
+//in java we can achieve multithreading in two ways
+
+//01. by extends Thread class
+//02. by implements Runnable interface
+
+
+life cycle of thread 
+01 new 
+02 Runnable
+03 Running 
+04 Non-Running (Blocked by thread schedular)
+05 Terminated
+
+new is a state when our thread is newlly created.
+
+Runnable is a state when we called start() method and our method any time ready to serve.
+
+Running is a state when our thread is Running.
+
+Non-blocking is a state when our thread is taking time to load contant then thread schedular put thread to non-blocking area to run another thread once it's completed then again our method went in running state after complete code run it will terminated.
+
+Terminated is a state when our method completed its task and ready to terminated.
+
+
+Thread class contructors 
+
+01) Thread();
+02) Thread(String name);
+03) Thread(Runnable r);
+04) Thread(Runnable r, String name);
+05) Thread(ThreadGroup g)
+
+Thread Class Methods
+01) obj.getId() - it returns thread ID (Every thread has unique id).
+02) obj.getName() - it returns thread name (Which is given by us through constructor).
